@@ -1,1 +1,1 @@
->  该项目采用springboot 2.2.0 搭建Maven 开发环境，该项目目前已引用ehcache，如需要其他框架及组件，需要自行添加。
+>  该项目采用springboot 2.2.0 + groovy 2.5.2 搭建Maven 开发环境，本项目推荐使用 groovy 语言进行开发，该项目目前已引用ehcache，如需要其他框架及组件，需要自行添加。
