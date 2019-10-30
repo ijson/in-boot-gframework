@@ -23,12 +23,12 @@ class ExceptionHandle {
     Result handle(Exception e) {
         if (e instanceof FrameworkBusinessException) {
             FrameworkBusinessException blogBusinessException = (FrameworkBusinessException) e;
-            return Result1.error(blogBusinessException);
+            return Result.error(blogBusinessException);
         } else if (e instanceof HttpRequestMethodNotSupportedException) {
-            return Result1.error(FrameworkBusinessExceptionCode.REQUEST_WAY_ERROR);
+            return Result.error(FrameworkBusinessExceptionCode.REQUEST_WAY_ERROR);
         } else {
             log.error("【系统异常】{}", e);
-            return Result1.error(FrameworkBusinessExceptionCode.SYSTEM_ERROR);
+            return Result.error(FrameworkBusinessExceptionCode.SYSTEM_ERROR);
         }
     }
 }
